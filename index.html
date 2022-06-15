@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timer Online</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+<body>
+  <div class="container">  
+   <div class="head">
+      <h1 class="title">my timer</h1><h1 class="color-title">online</h1>
+      <img src="assets/images/timer_icon_1.ico">
+    </div>
+    <div class="timer-display">00:00:00:00</div>
+    <div class="button-area">
+      <div class="button" onclick="start()">
+        <img class="buttonImg" src="assets/images/play-icon.png">
+        <p class="buttonText">Start</p>
+      </div>
+      <div class="button" onclick="reset()">
+        <img src="assets/images/stop-icon.png">
+        <p>Reset</p>
+      </div>
+      <div class="button" onclick="timeCheck()">
+        <img src="assets/images/check-icon.png">
+        <p>Time Check</p>
+      </div>
+    </div>
+    <div class="checkbox-area">
+      <h2>Time checks</h2>
+      <textarea class="checkbox" disabled="true"></textarea>
+      <div class="credits">
+        <p class="credits">Developed by<br>
+        <a href="https://github.com/MTaranto" target="_blank">Márcio Taranto</a></p>
+      </div>
+      <button onclick="clean()">Clean</button>
+    </div>
+  </div>
+  <script src="scripts/script.js"></script>
+</body>
+</html>
